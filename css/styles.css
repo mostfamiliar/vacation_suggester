@@ -5,7 +5,7 @@ h1.headline {
 }
 
 .jumbotron {
-  background-color: #112f3c;
+  background-color: #2d2d2d;
   color: #FFF;
 }
 
@@ -32,4 +32,8 @@ h1.headline {
 .veg-shade {
   background-color: #328db3;
 
+}
+
+#output-message {
+  display: none;
 }

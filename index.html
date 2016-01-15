@@ -12,46 +12,19 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="headline">VACATION SUGGESTER</h1>
-        <form>
+        <form id="vacation-suggester">
           <div class="weather-shade">
             <h3>Which do you prefer?</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="">
+                <input type="checkbox" id="hot-weather">
                 Hot weather
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="">
+                <input type="checkbox" id="cold-weather">
                 Cold weather
-              </label>
-            </div>
-          </div>
-          <div class="activity-shade">
-            <h3>Which activity are you interested in?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Shopping
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Visiting architectural landmarks
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Lounging on the beach
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Nature sight-seeing
               </label>
             </div>
           </div>
@@ -59,20 +32,42 @@
             <h3>Do you like cities?</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="">
+                <input type="checkbox" id="city-yes">
                 Yes
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="">
+                <input type="checkbox" id="city-no">
                 No
               </label>
             </div>
           </div>
+          <div class="activity-shade">
+            <h3>Which activity are you interested in?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="landmarks-radio" value="option1" checked>
+                Visiting architectural landmarks
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="music-radio" value="option1" checked>
+                Seeing live music
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="nature-radio" value="option1" checked>
+                Nature sight-seeing
+              </label>
+            </div>
+          </div>
+
           <div class="budget-shade">
             <h3>What is your budget?</h3>
-            <input type="number" class="form-control" placeholder="$ Input">
+            <input type="text" id="budget-amount" class="form-control" placeholder="$ Input">
           </div>
           <div class="veg-shade">
             <h3>Are you vegan / vegetarian?</h3>
@@ -89,6 +84,14 @@
               </label>
             </div>
           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div id="output-message">
+  <h3>Hi <span class="nameInput"></span>, </h3>
+  <p>Based on the information provided, we think <span class="vacationOutput"></span>  would be a great selection for you and your group!
+
+  </p>
+</div>
         </div>
       </div>
     </div>

@@ -68,9 +68,14 @@ $(document).ready(function(){
           $(".vacationOutput").text(vacation);
         }
 
-
+      if (name) {
       $("#output-message").show();
       event.preventDefault();
 
+      } else {
+        $(".error").show();
+        $(".name-shade").attr("class", "has-error");
+              event.preventDefault();
+      }
     });
 });

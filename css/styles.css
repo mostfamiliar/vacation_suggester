@@ -32,6 +32,10 @@ label {
 
 }
 
+.error {
+  display: none;
+}
+
 .activity-shade {
   background-color: #AD781E;
   padding: 10px;

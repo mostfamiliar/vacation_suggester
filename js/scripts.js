@@ -18,40 +18,25 @@ $(document).ready(function(){
       $(".nameInput").text(name);
 
 
-
-
       if (hotchecked === true) {
-         var vacation = "Tulum Mexico";
-         $(".vacationOutput").text(vacation);
-      }
+           var vacation = "Tulum Mexico";
+           $(".vacationOutput").text(vacation);
+         }
 
-      else {
-        if (citychecked === true) {
-          if (budget >= 5000) {
-            if (veganchecked === false) {
-              if (landmarks === true) {
-                  var vacation = "Paris France";
-                  $(".vacationOutput").text(vacation);
-              }
-
-              else {
-                  var vacation = "London England";
-                  $(".vacationOutput").text(vacation);
+        else  (hotchecked === false){
+          if (citychecked === true) {
+            if (budget >= 5000) {
+              if (veganchecked === false) {
+                if (landmarks === true) {
+                    var vacation = "Paris France";
+                    $(".vacationOutput").text(vacation);
                 }
-              }
 
-            else {
-              var vacation = "Reykjavik Iceland";
-              $(".vacationOutput").text(vacation);
-            }
-          }
-
-          else if (budget >= 2000) {
-            if (veganchecked === true) {
-              if (music === true) {
-              var vacation = "New York City";
-              $(".vacationOutput").text(vacation);
-              }
+                else {
+                    var vacation = "London England";
+                    $(".vacationOutput").text(vacation);
+                  }
+                }
 
               else {
                 var vacation = "Reykjavik Iceland";
@@ -59,28 +44,42 @@ $(document).ready(function(){
               }
             }
 
-            else {
-              var vacation = "traveling around Norway";
-              $(".vacationOutput").text(vacation);
+            else if (budget >= 2000) {
+              if (veganchecked === true) {
+                if (music === true) {
+                var vacation = "New York City";
+                $(".vacationOutput").text(vacation);
+                }
+
+                else {
+                  var vacation = "Reykjavik Iceland";
+                  $(".vacationOutput").text(vacation);
+                }
               }
 
-          }
+              else {
+                var vacation = "traveling around Norway";
+                $(".vacationOutput").text(vacation);
+                }
 
+            }
+
+
+            else {
+              var vacation = "a local vacation";
+              $(".vacationOutput").text(vacation);
+            }
+
+          }
 
           else {
-            var vacation = "a local vacation";
-            $(".vacationOutput").text(vacation);
+
+              var vacation = "traveling around Norway";
+              $(".vacationOutput").text(vacation);
+
           }
-
         }
-
-        else {
-
-            var vacation = "traveling around Norway";
-            $(".vacationOutput").text(vacation);
-
-        }
-      }
+      });
 
 
 

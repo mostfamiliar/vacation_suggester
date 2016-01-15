@@ -15,7 +15,7 @@
         <form id="vacation-suggester">
           <div class="weather-shade">
             <h3>Which do you prefer?</h3>
-            <div class="checkbox">
+            <div class="checkbox disabled">
               <label>
                 <input type="checkbox" id="hot-weather">
                 Hot weather
@@ -62,19 +62,19 @@
             <h3>Which activity are you interested in?</h3>
             <div class="radio">
               <label>
-                <input type="radio" id="landmarks-radio">
+                <input type="radio" id="landmarks-radio" name="radio">
                 Visiting architectural landmarks
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" id="music-radio">
+                <input type="radio" id="music-radio" name="radio">
                 Seeing live music
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" id="nature-radio">
+                <input type="radio" id="nature-radio" name="radio">
                 Nature sight-seeing
               </label>
             </div>
@@ -82,7 +82,7 @@
 
           <div class="budget-shade">
             <h3>What is your budget?</h3>
-            <input type="text" id="budget-amount" class="form-control" placeholder="$ Input">
+            <input type="text" id="budget-amount" class="form-control" placeholder="$ amount">
           </div>
 
            <button type="submit" class="btn btn-default">Submit</button>

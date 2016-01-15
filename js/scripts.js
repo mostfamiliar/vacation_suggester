@@ -10,6 +10,12 @@ $(document).ready(function(){
       var veganchecked = $("input#vegan-checked").prop('checked');
       var local;
 
+      $(".activity-shade").change(function () {
+        $('[type=radio]:checked').prop('checked', false);
+        $(this).prop('checked', 'checked');
+      });
+
+
       if (hotchecked === true) {
          var vacation = "Tulum";
          $(".vacationOutput").text(vacation);

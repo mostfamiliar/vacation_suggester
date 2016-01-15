@@ -1,0 +1,75 @@
+h1.headline {
+  font-style: italic;
+  font-weight: bold;
+  color: #BC9657;
+}
+
+h1.headline:hover {
+  color: #c2f0f0;
+}
+
+label {
+  font-size: 16px;
+}
+
+.jumbotron {
+  background-color: #2d2d2d;
+  color: #FFF;
+}
+
+.name-shade {
+  background-color: #474747;
+  padding: 10px;
+}
+
+#name {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.weather-shade {
+  background-color: #593F28;
+  padding: 10px;
+
+}
+
+.activity-shade {
+  background-color: #AD781E;
+  padding: 10px;
+
+}
+
+.city-shade {
+  background-color: #A64E1B;
+  padding: 10px;
+
+}
+
+.budget-shade {
+  background-color: #A63232;
+  padding: 10px;
+
+}
+
+#budget-amount {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.veg-shade {
+  background-color: #D97E7E;
+  padding: 10px;
+
+}
+
+#output-message {
+  display: none;
+  background-color: #1e89ad;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: #29a3a3;
+  color: #FFF;
+}

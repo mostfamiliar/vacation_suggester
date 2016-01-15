@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="headline">VACATION SUGGESTER</h1>
+        <form id="vacation-suggester">
+          <div class="name-shade">
+            <h3>What is your name?</h3>
+            <input type="text" id="name" class="form-control" placeholder="Name">
+          </div>
+          <div class="weather-shade">
+            <h3>Which do you prefer?</h3>
+            <div class="checkbox weather-click">
+              <label>
+                <input type="checkbox" id="hot-weather" name="weather-click">
+                Hot weather
+              </label>
+            </div>
+            <div class="checkbox weather-click">
+              <label>
+                <input type="checkbox" id="cold-weather" name="weather-click">
+                Cold weather
+              </label>
+            </div>
+          </div>
+          <div class="city-shade">
+            <h3>Do you like cities?</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="city-yes" name="city-click">
+                Yes
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="city-no" name="city-click">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="veg-shade">
+            <h3>Are you vegan / vegetarian?</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="vegan-checked" name="veg-click">
+                Yes
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="vegan-unchecked" name="veg-click">
+                No
+              </label>
+            </div>
+          </div>
+          <div class="activity-shade">
+            <h3>Which activity are you interested in?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" id="landmarks-radio" name="radio">
+                Visiting architectural landmarks
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" id="music-radio" name="radio">
+                Seeing live music
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" id="nature-radio" name="radio">
+                Nature sight-seeing
+              </label>
+            </div>
+          </div>
+
+          <div class="budget-shade">
+            <h3>What is your budget?</h3>
+            <input type="text" id="budget-amount" class="form-control" placeholder="$">
+          </div>
+
+           <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <div id="output-message">
+  <h3>Hi <span class="nameInput"></span>, </h3>
+  <p>Based on the information provided, we think <span class="vacationOutput"></span>  would be a great selection for you and your group!
+
+  </p>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

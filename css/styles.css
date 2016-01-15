@@ -10,30 +10,44 @@ h1.headline {
 }
 
 .weather-shade {
-  background-color: #163f50;
+  background-color: #593F28;
+  padding: 10px;
 
 }
 
 .activity-shade {
-  background-color: #1c4e63;
+  background-color: #AD781E;
+  padding: 10px;
 
 }
 
 .city-shade {
-  background-color: #225e77;
+  background-color: #A64E1B;
+  padding: 10px;
 
 }
 
 .budget-shade {
-  background-color: #2d7e9f;
+  background-color: #A63232;
+  padding: 10px;
 
 }
 
 .veg-shade {
-  background-color: #328db3;
+  background-color: #D97E7E;
+  padding: 10px;
 
 }
 
 #output-message {
   display: none;
+  background-color: #1e89ad;
+  border-style: solid;
+  border-width: 2px black;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  margin-top: 15px;
 }

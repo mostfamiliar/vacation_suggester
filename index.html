@@ -43,23 +43,38 @@
               </label>
             </div>
           </div>
+          <div class="veg-shade">
+            <h3>Are you vegan / vegetarian?</h3>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="vegan-checked">
+                Yes
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="vegan-unchecked">
+                No
+              </label>
+            </div>
+          </div>
           <div class="activity-shade">
             <h3>Which activity are you interested in?</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="landmarks-radio" value="option1" checked>
+                <input type="radio" id="landmarks-radio">
                 Visiting architectural landmarks
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="music-radio" value="option1" checked>
+                <input type="radio" id="music-radio">
                 Seeing live music
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="nature-radio" value="option1" checked>
+                <input type="radio" id="nature-radio">
                 Nature sight-seeing
               </label>
             </div>
@@ -69,21 +84,7 @@
             <h3>What is your budget?</h3>
             <input type="text" id="budget-amount" class="form-control" placeholder="$ Input">
           </div>
-          <div class="veg-shade">
-            <h3>Are you vegan / vegetarian?</h3>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="">
-                Yes
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="">
-                No
-              </label>
-            </div>
-          </div>
+
            <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <div id="output-message">

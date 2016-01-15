@@ -15,6 +15,9 @@ $(document).ready(function(){
       var veganchecked = $("input#vegan-checked").prop('checked');
       var name = $("input#name").val();
 
+      var weatherChecked = $('input.weather-checked').is(':checked');
+      var cityChecked = $('input.weather-checked').is(':checked');
+
       $(".nameInput").text(name);
 
       if (hotchecked === true) {
@@ -68,14 +71,21 @@ $(document).ready(function(){
           $(".vacationOutput").text(vacation);
         }
 
-      if (name) {
-      $("#output-message").show();
-      event.preventDefault();
-
-      } else {
+      if (!name) {
         $(".error").show();
         $(".name-shade").attr("class", "has-error");
-              event.preventDefault();
+        event.preventDefault();
+      } else if (!budget) {
+        $(".budget-shade").attr("class", "has-error");
+        event.preventDefault();
+     } else if (weatherChecked === false) {
+       $(".weather-shade").attr("class", "has-error");
+       event.preventDefault();
+
+     } else {
+         $("#output-message").show();
+         event.preventDefault();
       }
+
     });
 });

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('input[type="checkbox"]').on('change', function() {
-    $('input[type="checkbox"]').not(this).prop('checked', false);
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
   });
 
     $("form#vacation-suggester").submit(function(event) {

@@ -17,17 +17,19 @@
             <h3>What is your name?</h3>
             <input type="text" id="name" class="form-control" placeholder="Name">
           </div>
+
           <div class="weather-shade">
             <h3>Which do you prefer?</h3>
             <div class="checkbox weather-click">
               <label>
-                <input type="checkbox" id="hot-weather" name="weather-click">
+
+                <input type="checkbox" id="hot-weather" name="weather-click" class="weather-checked">
                 Hot weather
               </label>
             </div>
             <div class="checkbox weather-click">
               <label>
-                <input type="checkbox" id="cold-weather" name="weather-click">
+                <input type="checkbox" id="cold-weather" name="weather-click" class="weather-checked">
                 Cold weather
               </label>
             </div>
@@ -36,13 +38,14 @@
             <h3>Do you like cities?</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" id="city-yes" name="city-click">
+                <input type="checkbox" id="city-yes" name="city-click" class="city-checked">
+
                 Yes
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" id="city-no" name="city-click">
+                <input type="checkbox" id="city-no" name="city-click" class="city-checked">
                 No
               </label>
             </div>
@@ -92,11 +95,8 @@
            <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <div id="output-message">
-  <h3>Hi <span class="nameInput"></span>, </h3>
-  <p>Based on the information provided, we think <span class="vacationOutput"></span>  would be a great selection for you and your group!
-
-  </p>
-</div>
+          <h3>Hi <span class="nameInput"></span>, </h3>
+          <p>Based on the information provided, we think <span class="vacationOutput"></span>  would be a great selection for you and your group!</p>
         </div>
       </div>
     </div>

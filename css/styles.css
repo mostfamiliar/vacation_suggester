@@ -4,11 +4,23 @@ h1.headline {
   color: #BC9657;
 }
 
+label {
+  font-size: 16px;
+}
+
 .jumbotron {
   background-color: #2d2d2d;
   color: #FFF;
 }
 
+.name-shade {
+  background-color: #474747;
+  padding: 10px;
+}
+#name {
+  width: 300px;
+  margin-bottom: 10px;
+}
 .weather-shade {
   background-color: #593F28;
   padding: 10px;
@@ -31,6 +43,11 @@ h1.headline {
   background-color: #A63232;
   padding: 10px;
 
+}
+
+#budget-amount {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
 .veg-shade {

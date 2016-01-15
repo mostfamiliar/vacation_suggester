@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+  });
+
     $("form#vacation-suggester").submit(function(event) {
       var hotchecked = $("input#hot-weather").prop('checked');
       var coldchecked = $("input#cold-weather").prop('checked');
@@ -8,16 +13,15 @@ $(document).ready(function(){
       var citychecked = $("input#city-yes").prop('checked');
       var budget = parseInt($("input#budget-amount").val());
       var veganchecked = $("input#vegan-checked").prop('checked');
-      var local;
+      var name = $("input#name").val();
 
-      $(".activity-shade").change(function () {
-        $('[type=radio]:checked').prop('checked', false);
-        $(this).prop('checked', 'checked');
-      });
+      $(".nameInput").text(name);
+
+
 
 
       if (hotchecked === true) {
-         var vacation = "Tulum";
+         var vacation = "Tulum Mexico";
          $(".vacationOutput").text(vacation);
       }
 

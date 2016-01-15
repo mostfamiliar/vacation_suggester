@@ -1,0 +1,35 @@
+h1.headline {
+  font-style: italic;
+  font-weight: bold;
+  color: #BC9657;
+}
+
+.jumbotron {
+  background-color: #112f3c;
+  color: #FFF;
+}
+
+.weather-shade {
+  background-color: #163f50;
+
+}
+
+.activity-shade {
+  background-color: #1c4e63;
+
+}
+
+.city-shade {
+  background-color: #225e77;
+
+}
+
+.budget-shade {
+  background-color: #2d7e9f;
+
+}
+
+.veg-shade {
+  background-color: #328db3;
+
+}
